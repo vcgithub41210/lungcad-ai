@@ -41,6 +41,9 @@ const Login = () => {
         else if(data.role == 'user'){
           navigate('/user-dashboard');
         }
+        else{
+          navigate('/');
+        }
       } else {
         toast.error(data.message);
       }
